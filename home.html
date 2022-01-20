@@ -50,9 +50,6 @@
 
 <body>
 
-	<audio autoplay loop>
-		<source src="sound/OverTheMoon.mp3" type="audio/mpeg" />
-	</audio>
 	<div class="page-content-scroll">
 		<div class="cover-class cover-bg-1">
 		</div>
@@ -75,9 +72,18 @@
 			</div>
 
 
-			<br><br><br><br><br>
+			<br><br><br>
 
 		</div>
+		
+		<div style="text-align: center;">
+			<audio id="myAudio" autoplay="autoplay" loop="loop" controls="controls">
+				<source src="sound/Ragu.mp3" type="audio/mpeg" />
+				<source src="sound/Ragu.ogg" type="audio/mpeg" />
+				<source src="sound/Ragu.wav" type="audio/mpeg" />
+			</audio>
+			<br><br><br><br>
+			</div>
 	</div>
 
 	<!-- toolbar bottom -->
@@ -455,6 +461,11 @@
 			"<span>Seconds</span></div>";
 	}
 	setInterval("updateTimer()", 1000);
+</script>
+
+<script>
+	var aud = document.getElementById("myAudio");
+	aud.volume = 0.1;
 </script>
 
 </html>
