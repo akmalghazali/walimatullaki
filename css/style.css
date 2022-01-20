@@ -424,7 +424,7 @@ input[type="date"]::-webkit-clear-button {
   background-image: url(../images/covers/laki.png);
 }
 .cover-bg-2 {
-  background-image: url(../images/covers/kakmun-laki.png);
+  background-image: url(../images/covers/laki2.png);
 }
 /* .cover-bg-3 {
   background-image: url(../images/covers/kad4.png);
@@ -432,7 +432,7 @@ input[type="date"]::-webkit-clear-button {
 /* .cover-bg-2 .cover-overlay{background-color:rgba(0,0,0,0.85);} */
 
 .cover-class {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
   height: 90vh;
